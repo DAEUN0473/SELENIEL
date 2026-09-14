@@ -23,7 +23,7 @@ for (let i = 0; i < snowCount; i++) {
   flake.className = "snowflake";
 
   flake.style.left = Math.random() * 100 + "vw";
-  flake.style.animationDelay = Math.random() * 15 + "s";
+  flake.style.animationDelay = -(Math.random() * 15) + "s";
   flake.style.animationDuration = (10 + Math.random() * 10) + "s";
 
   const size = 2 + Math.random() * 6;
