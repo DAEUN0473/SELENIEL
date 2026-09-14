@@ -26,5 +26,9 @@ for (let i = 0; i < snowCount; i++) {
   flake.style.animationDelay = Math.random() * 15 + "s";
   flake.style.animationDuration = (10 + Math.random() * 10) + "s";
 
+  const size = 2 + Math.random() * 6;
+flake.style.width = size + "px";
+flake.style.height = size + "px";
+
   snow.appendChild(flake);
 }
