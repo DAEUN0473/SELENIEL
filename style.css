@@ -31,10 +31,10 @@ body {
   justify-content: center;
   background: linear-gradient(
     to bottom,
-    #13181b 0%,
-    #1a1f23 20%,
-    #262c2c 40%,
-    #4a4947 70%,
+    #0a0d0e 0%,
+    #1a1f23 40%,
+    #262c2c 50%,
+    #4a4947 80%,
     #958d83 100%
   );
       ;
@@ -66,10 +66,10 @@ body {
   justify-content: center;
   background: linear-gradient(
     to bottom,
-    #13181b 0%,
-    #1a1f23 20%,
-    #262c2c 40%,
-    #4a4947 70%,
+    #0a0d0e 0%,
+    #1a1f23 40%,
+    #262c2c 50%,
+    #4a4947 80%,
     #958d83 100%
   );
   transform: translateY(100%);
