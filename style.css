@@ -29,6 +29,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+   background: #e3e6e7;
 }
 
 /* 로고 버튼 */
@@ -55,7 +56,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: black;
+  background: #e3e6e7;
   transform: translateY(100%);
   transition: transform 0.8s ease;
   overflow: auto;
