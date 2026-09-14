@@ -30,5 +30,11 @@ for (let i = 0; i < snowCount; i++) {
 flake.style.width = size + "px";
 flake.style.height = size + "px";
 
+  const opacity = 0.3 + Math.random() * 0.8;
+flake.style.opacity = opacity;
+
+const blur = size * 0.35;
+flake.style.filter = `blur(${blur}px)`;
+  
   snow.appendChild(flake);
 }
