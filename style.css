@@ -29,7 +29,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-   background: #e3e6e7;
+   background: linear-gradient(
+      #13181b 100%
+      #1a1f23 80%
+      #262c2c 40%
+      #4a4947 15%
+      #c5b7aa 10%
+      ;
 }
 
 /* 로고 버튼 */
@@ -93,7 +99,7 @@ body.open .main-screen {
   inset: 0;
   pointer-events: none;
   overflow: hidden;
-   z-index: 50;
+   z-index: 60;
 }
 }
 
@@ -116,4 +122,18 @@ body.open .main-screen {
   to {
     transform: translateY(100vh);
   }
+}
+
+.grain {
+    z-index: 50;
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 60;
+  opacity: 0.03;
+
+  background-image:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E");
+
+  background-size: 180px 180px;
 }
