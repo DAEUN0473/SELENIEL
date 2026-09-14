@@ -14,7 +14,6 @@ homeButton.addEventListener("click", () => {
 });
 
 const snow = document.getElementById("snow");
-
 const snowCount = 40;
 
 for (let i = 0; i < snowCount; i++) {
@@ -40,7 +39,6 @@ flake.style.filter = `blur(${blur}px)`;
 }
 
 const particles = document.getElementById("particles");
-
 const particleCount = 35;
 
 for (let i = 0; i < particleCount; i++) {
@@ -51,7 +49,7 @@ for (let i = 0; i < particleCount; i++) {
   particle.style.left = Math.random() * 100 + "vw";
   particle.style.top = Math.random() * 100 + "vh";
 
-  const size = 1 + Math.random() * 3;
+  const size = 1 + Math.random() * 2;
   particle.style.width = size + "px";
   particle.style.height = size + "px";
 
