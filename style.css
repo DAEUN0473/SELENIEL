@@ -34,7 +34,7 @@ body {
     #0a0d0e 0%,
     #1a1f23 60%,
     #262c2c 90%,
-    #4a4947 100%,
+    #4a4947 100%
   );
       ;
 }
@@ -68,7 +68,7 @@ body {
     #0a0d0e 0%,
     #1a1f23 60%,
     #262c2c 90%,
-    #4a4947 100%,
+    #4a4947 100%
   );
   transform: translateY(100%);
   transition: transform 0.8s ease;
