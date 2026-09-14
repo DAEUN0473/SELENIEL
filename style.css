@@ -32,10 +32,9 @@ body {
   background: linear-gradient(
     to bottom,
     #0a0d0e 0%,
-    #1a1f23 40%,
-    #262c2c 70%,
-    #4a4947 90%,
-    #958d83 100%
+    #1a1f23 60%,
+    #262c2c 80%,
+    #4a4947 100%,
   );
       ;
 }
@@ -67,10 +66,9 @@ body {
   background: linear-gradient(
     to bottom,
     #0a0d0e 0%,
-    #1a1f23 40%,
-    #262c2c 70%,
-    #4a4947 90%,
-    #958d83 100%
+    #1a1f23 60%,
+    #262c2c 80%,
+    #4a4947 100%,
   );
   transform: translateY(100%);
   transition: transform 0.8s ease;
