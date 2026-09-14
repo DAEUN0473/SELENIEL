@@ -30,7 +30,7 @@ for (let i = 0; i < snowCount; i++) {
 flake.style.width = size + "px";
 flake.style.height = size + "px";
 
-  const opacity = 0.3 + Math.random() * 0.8;
+const opacity = 0.2 + Math.random() * 0.7;
 flake.style.opacity = opacity;
 
 const blur = size * 0.35;
