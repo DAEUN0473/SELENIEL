@@ -1,0 +1,88 @@
+/* =========================================
+   SELENIEL - 기본 스타일
+   디자인은 이 파일에서 자유롭게 수정하세요.
+   ========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* 모든 화면 */
+.screen {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 처음 화면 */
+.intro-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 로고 버튼 */
+.logo-button {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.logo-button img {
+  display: block;
+  max-width: 60vw;
+  max-height: 60vh;
+  object-fit: contain;
+}
+
+/* 메인 화면 */
+.main-screen {
+  display: flex;
+  position: fixed;
+  inset: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  transform: translateY(100%);
+  transition: transform 0.8s ease;
+  overflow: auto;
+}
+
+body.open .main-screen {
+  transform: translateY(0);
+}
+
+.home-button {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.content {
+  text-align: center;
+}
+
+/* 모바일 */
+@media (max-width: 600px) {
+  .logo-button img {
+    max-width: 75vw;
+    max-height: 50vh;
+  }
+}

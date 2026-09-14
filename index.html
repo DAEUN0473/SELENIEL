@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SELENIEL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 시작 화면: 로고를 클릭하면 메인 화면이 열립니다. -->
+  <section id="intro" class="screen intro-screen">
+    <button id="logoButton" class="logo-button" aria-label="SELENIEL 메인 화면 열기">
+      <img src="logo.png" alt="SELENIEL 로고">
+    </button>
+  </section>
+
+  <!-- 메인 화면: 이후 원하는 디자인을 자유롭게 추가하면 됩니다. -->
+  <main id="main" class="screen main-screen" aria-hidden="true">
+    <button id="homeButton" class="home-button" aria-label="처음 화면으로 돌아가기">
+      SELENIEL
+    </button>
+
+    <div class="content">
+      <h1>SELENIEL</h1>
+      <p>여기에 원하는 콘텐츠를 만들어 주세요.</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
