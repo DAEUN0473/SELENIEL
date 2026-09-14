@@ -94,6 +94,7 @@ body.open .main-screen {
   pointer-events: none;
   overflow: hidden;
 }
+}
 
 .snowflake {
   position: absolute;
@@ -114,5 +115,4 @@ body.open .main-screen {
   to {
     transform: translateY(100vh);
   }
-}
 }
