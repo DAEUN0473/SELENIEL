@@ -38,3 +38,43 @@ flake.style.filter = `blur(${blur}px)`;
   
   snow.appendChild(flake);
 }
+
+const particles = document.getElementById("particles");
+
+const particleCount = 35;
+
+for (let i = 0; i < particleCount; i++) {
+  const particle = document.createElement("span");
+
+  particle.className = "particle";
+
+  particle.style.left = Math.random() * 100 + "vw";
+  particle.style.top = Math.random() * 100 + "vh";
+
+  const size = 1 + Math.random() * 3;
+  particle.style.width = size + "px";
+  particle.style.height = size + "px";
+
+  particle.style.opacity = 0.1 + Math.random() * 0.5;
+
+  const glow = 4 + Math.random() * 12;
+  particle.style.boxShadow = `0 0 ${glow}px rgba(255, 255, 255, 0.8)`;
+
+  particle.style.animationDuration =
+    (3 + Math.random() * 5) + "s";
+
+  particle.style.animationDelay =
+    -(Math.random() * 8) + "s";
+  
+  particle.style.setProperty(
+    "--float-x",
+    (Math.random() * 20 - 10) + "px"
+  );
+
+  particle.style.setProperty(
+    "--float-y",
+    (Math.random() * 20 - 10) + "px"
+  );
+
+  particles.appendChild(particle);
+}
