@@ -62,12 +62,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-     background: linear-gradient(
-      #13181b 100%
-      #1a1f23 80%
-      #262c2c 40%
-      #4a4947 15%
-      #c5b7aa 10%
+   background: black
   transform: translateY(100%);
   transition: transform 0.8s ease;
   overflow: auto;
