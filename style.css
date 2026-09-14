@@ -32,8 +32,8 @@ body {
   background: linear-gradient(
     to bottom,
     #0a0d0e 0%,
-    #1a1f23 60%,
-    #262c2c 70%,
+    #1a1f23 50%,
+    #262c2c 60%,
     #4a4947 100%
   );
 }
@@ -65,8 +65,8 @@ body {
   background: linear-gradient(
     to bottom,
     #0a0d0e 0%,
-    #1a1f23 60%,
-    #262c2c 70%,
+    #1a1f23 50%,
+    #262c2c 60%,
     #4a4947 100%
   );
   transform: translateY(100%);
@@ -127,6 +127,51 @@ body.open .main-screen {
 
   to {
     transform: translateY(100vh);
+  }
+}
+
+/* 반짝이는 부유 입자 */
+
+.particles {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 65;
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  filter: blur(0.5px);
+
+  animation:
+    particle-twinkle ease-in-out infinite,
+    particle-float ease-in-out infinite;
+}
+
+@keyframes particle-twinkle {
+  0%, 100% {
+    opacity: 0.05;
+    transform: scale(0.5);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.4);
+  }
+}
+
+@keyframes particle-float {
+  0%, 100% {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  50% {
+    margin-left: var(--float-x);
+    margin-top: var(--float-y);
   }
 }
 
