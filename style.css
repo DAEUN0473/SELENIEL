@@ -131,7 +131,6 @@ body.open .main-screen {
 }
 
 .grain {
-    z-index: 50;
   position: fixed;
   inset: 0;
   pointer-events: none;
