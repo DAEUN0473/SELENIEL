@@ -48,9 +48,9 @@ body {
 }
 
 .logo-button img {
-  display: block;
-  max-width: 60vw;
-  max-height: 60vh;
+ display: block;
+  width: 400px;
+  height: 200px;
   object-fit: contain;
 }
 
