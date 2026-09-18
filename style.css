@@ -197,10 +197,3 @@ body.open .main-screen {
 
   background-size: 180px 180px;
 }
-.logo-button img {
-  display: block;
-  max-width: 60vw;
-  max-height: 60vh;
-  object-fit: contain;
-  filter: brightness(0) invert(1);
-}
